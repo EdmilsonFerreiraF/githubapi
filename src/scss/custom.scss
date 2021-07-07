@@ -11,4 +11,41 @@ $tertiary: #a5a5a5;
     @include media-breakpoint-up(sm) {
       font-size: rfs-fluid-value(1.2rem);
     }
+  }
+  
+.features-item {
+  padding: 2rem;
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+    width: 100;
+  }
+}
+
+.features {
+  @include media-breakpoint-up(sm) {
+    --bs-gutter-y: 3rem;
+  }
+}
+
+.features-icon {
+  width: 150px;
+  margin-bottom: 1rem;
+  
+  @include media-breakpoint-down(sm) {
+    width: 100px;
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  @include media-breakpoint-up(lg) {
+    font-size: rfs-fluid-value(3rem);
+  }
+}
+
+.subtitle {
+  
+  @include media-breakpoint-up(lg) {
+    font-size: rfs-fluid-value(2rem);
+  }
 }
