@@ -3,7 +3,7 @@ import FeatCard from "../../components/FeatCard/FeatCard";
 
 function Home() {
   return (
-    <div className="container my-5 ">
+    <div className="container my-5">
       <h1 className="display-4 text-center mb-2 title">Github API</h1>
 
       <h2 className="features display-6 h3 text-center subtitle">
@@ -50,10 +50,10 @@ function Home() {
       </ul>
 
       <div className=" mx-auto  text-center">
-        <p class="fw-light fs-5 text">Comece agora</p>
-          <button className="btn btn-primary">
-            Login pelo Github
-          </button>
+        <p className="fw-light fs-5 text">Comece agora</p>
+          <a className="btn btn-primary" href="http://localhost:3003/user/login/auth">
+          Login pelo Github
+          </a>
       </div>
     </div>
   );

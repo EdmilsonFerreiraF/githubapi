@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-const SignupButton = () => {
+import LoggedContext from "../../context/LoggedContext";
+
+const SignupButton = (props) => {
+  const loggedContext = useContext(LoggedContext)
+    
     return (
-        <div className="btn-group col-1-auto col-md-2 col-xl-1" role="group" aria-label="Login and logout">
-            <button className="btn btn-success me-2" type="button">
-                Login
-            </button>
+        <div onClick={props.signupClick} className="btn-group col-1-auto col-md-2 col-xl-1" role="group" aria-label="Basic example">
+            <a className="btn btn-success me-2" href="http://localhost:3003/user/login/auth">
+                {loggedContext && loggedContext.logged ? "Sair" : "Login"}
+            </a>
         </div>
     )
 }
