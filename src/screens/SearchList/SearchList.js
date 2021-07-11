@@ -32,8 +32,8 @@ const SearchList = () => {
                 {result && result.items && result.items.map(result => (
                     <SearchItem 
                         key={result.id}
-                        username={query.get("username")}
                         avatar_url={result.avatar_url}
+                        username={result.login}
                     />
                 ))}
             </ul>
