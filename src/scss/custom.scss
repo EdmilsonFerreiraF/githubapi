@@ -44,8 +44,15 @@ $tertiary: #a5a5a5;
 }
 
 .subtitle {
-  
   @include media-breakpoint-up(lg) {
     font-size: rfs-fluid-value(2rem);
   }
+}
+
+.result-item {
+  width: 16rem;
+}
+
+.result-item__btn {
+  font-size: .8rem;
 }
