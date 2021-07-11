@@ -1,0 +1,14 @@
+/* index.scss */
+@import 'bootstrap/scss/bootstrap';
+
+$font-size-base: 1rem;
+$input-btn-font-size: $font-size-base;
+$grid-gutter-width: 0;
+
+$tertiary: #a5a5a5;
+
+.btn {
+    @include media-breakpoint-up(sm) {
+      font-size: rfs-fluid-value(1.2rem);
+    }
+}
