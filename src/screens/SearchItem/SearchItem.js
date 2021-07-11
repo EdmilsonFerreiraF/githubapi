@@ -1,7 +1,7 @@
 import React from "react"
 import { useHistory } from "react-router-dom";
 
-import { goToSearchDetails, goToSearchItemRepositories } from "../../routes/coordinator";
+import { goToSearchDetails, goToSearchItemRepositories, goToSearchItemStarred } from "../../routes/coordinator";
 
 const SearchItem = (props) => {
     const history = useHistory();
@@ -14,7 +14,7 @@ const SearchItem = (props) => {
         </div>
         <div className="card-body row gap-3">
             <button type="button" className="btn btn-warning col-md result-item__btn" onClick={() => goToSearchItemRepositories(history, props.username)}>Repositórios</button>
-            <button type="button" className="btn btn-warning col-md result-item__btn">Repos. mais visitados</button>
+            <button type="button" className="btn btn-warning col-md result-item__btn" onClick={() => goToSearchItemStarred(history, props.username)}>Repos. mais visitados</button>
         </div>
       </div>
     );
