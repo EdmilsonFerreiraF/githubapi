@@ -4594,6 +4594,7 @@ __metadata:
     "@testing-library/user-event": ^12.1.10
     axios: ^0.21.1
     bootstrap: ^5.0.2
+    dayjs: ^1.10.6
     eslint-config-react-app: ^6.0.0
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -5275,6 +5276,13 @@ __metadata:
     whatwg-mimetype: ^2.3.0
     whatwg-url: ^8.0.0
   checksum: 42239927c6a202e2d02b7f41c94ca53e3cea036898b97b8bf6120ed1b25e0dd11c48ec7aa5c84cf807c2cb9f3a637df9fb50f3ca25a52863186a4ac46254726b
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.10.6":
+  version: 1.10.6
+  resolution: "dayjs@npm:1.10.6"
+  checksum: 474d21162c12d269d40e90cb3ce049bb2d987b8038c173224c8eb5805d6f38f07d11875779a81e282d8f889d3803c4bbb91d09b6ee08a1a44ae60ec26afd8f45
   languageName: node
   linkType: hard
 
