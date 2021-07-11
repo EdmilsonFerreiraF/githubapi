@@ -15,7 +15,7 @@ const SearchItemDetails = () => {
     return (
       <div className="card row container col col-lg-7 mx-auto my-5">
         <div className="card-body col">
-          <h5 className="card-title display-6 text-center my-5">{params.username}</h5>
+          <h1 className="card-title display-6 text-center my-5">{params.username}</h1>
         </div>
         <img src={result.avatar_url} className=" col-5 my-5 mx-auto" alt="User avatar" />
         <div className="card-body row grid gap-3 justify-content-center my-5">

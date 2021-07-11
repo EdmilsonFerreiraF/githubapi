@@ -5,6 +5,7 @@ import Error from '../screens/Error/Error';
 import Home from '../screens/Home/Home';
 import LoginCallback from '../screens/LoginCallback/LoginCallback';
 import SearchItemDetails from '../screens/SearchItemDetails/SearchItemDetails';
+import SearchItemRepositories from '../screens/SearchItemRepositories/SearchItemRepositories';
 import Search from '../screens/SearchList/SearchList';
 
 const Router = () => {
@@ -14,6 +15,7 @@ const Router = () => {
             <Route exact path="/login/callback" component={LoginCallback} />
             <Route exact path="/search" component={Search} />
             <Route exact path="/users/:username" component={SearchItemDetails} />
+            <Route exact path="/users/:username/repos" component={SearchItemRepositories} />
             <Route component={Error}/>
         </Switch>
     )

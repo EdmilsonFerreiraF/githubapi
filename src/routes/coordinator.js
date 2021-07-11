@@ -13,3 +13,7 @@ export const goToSearch = (history, username) => {
 export const goToSearchDetails = (history, username) => {
     history.push(`/users/${username}`)
 }
+  
+export const goToSearchItemRepositories = (history, username) => {
+    history.push(`/users/${username}/repos`)
+}
