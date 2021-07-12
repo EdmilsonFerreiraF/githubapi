@@ -21,7 +21,7 @@ const UserStarred = () => {
 
         <ul className="row my-5 gap-4 justify-content-center">
           {result && result.map(result => (
-            <li className="col-md-2 lead" key={result.id}>{result.name} <a href={result.html_url} target="_blank">Github link</a></li>
+            <li className="col-md-2 lead" key={result.id}>{result.name} <a href={result.html_url} target="_blank" rel="noreferrer">Github link</a></li>
           ))}
         </ul>
       </div>
