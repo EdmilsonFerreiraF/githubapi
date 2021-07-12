@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import { goToHome } from '../../routes/coordinator';
+import Navbar from 'react-bootstrap/Navbar';
 
+import { goToHome } from '../../routes/coordinator';
 import LoggedContext from '../../context/LoggedContext';
 
-import SignupButton from '../SignupButton/SignupButton';
+import LoginOrLogoutButton from '../LoginOrLogoutButton/LoginOrLogoutButton';
 import SearchBar from '../SearchBar/SearchBar';
 import Logo from '../Logo/Logo';
 
@@ -17,11 +18,11 @@ const MainAppBar = () => {
     }
     
     return (    
-        <nav className="navbar navbar-dark bg-light row gy-1">
+        <Navbar bg="light" expand="2xl" className="row p-4 g-2">
             <Logo logoClick={handleLogoClick}/>
             <SearchBar/>
-            <SignupButton loggedContext={loggedContext}/>
-        </nav>
+            <LoginOrLogoutButton loggedContext={loggedContext}/>
+        </Navbar>
     )
 }
 

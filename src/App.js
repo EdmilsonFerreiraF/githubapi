@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import './scss/custom.scss';
 import Router from './routes/Router';
 import LoggedContext from './context/LoggedContext';
 import MainAppBar from './components/MainAppBar/MainAppBar'
+import './scss/custom.scss';
 
 function App() {
   const [logged, setLogged] = useState(localStorage.getItem("token") ? true : false)
@@ -11,7 +11,7 @@ function App() {
   const loggedContext = {logged, setLogged}
 
   return (
-    <div className="App px-3">
+    <div className="App">
       <BrowserRouter>
         <LoggedContext.Provider value={loggedContext}>
           <MainAppBar />

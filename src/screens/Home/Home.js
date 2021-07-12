@@ -1,17 +1,17 @@
 import React from "react";
-import FeatCard from "../../components/FeatCard/FeatCard";
+import FeatItem from "../../components/FeatItem/FeatItem";
 
 function Home() {
   return (
-    <div className="container my-5 my-3 row mx-auto">
+    <div className="container my-5 my-3 px-3 row mx-auto">
       <h1 className="display-4 text-center mb-2 title">Github API</h1>
 
       <h2 className="features display-6 h3 gy-5 my-4 text-center subtitle">
         A API do Github para obter dados de usuário e repositórios
       </h2>
 
-      <ul className="card-group row my-5">
-        <FeatCard
+      <ul className="card-group mx-0 row my-5">
+        <FeatItem
          cardTitle={"Buscar por um usuário"}
          cardText={"Saiba mais sobre um usuário"}
          svgClass={"bi bi-person-lines-fill mx-auto"}
@@ -21,7 +21,7 @@ function Home() {
            fillRole: "evenood"
            },
          ]} />
-        <FeatCard
+        <FeatItem
          cardTitle={"Exibir um repositório"}
          cardText={"Acesse um repositório, assim como você faria no site do Github"}
          svgClass={"bi bi-archive-fill mx-auto"}
@@ -31,7 +31,7 @@ function Home() {
            fillRole: "evenood"
            },
          ]}/>
-        <FeatCard
+        <FeatItem
         cardTitle={"Exibir repositórios mais visitados por um usuário"}
         cardText={"Descubra o que mais um usuário mais vê"}
         svgClass={"bi bi-list-task mx-auto"}
