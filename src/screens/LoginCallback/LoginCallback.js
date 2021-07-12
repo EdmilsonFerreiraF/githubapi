@@ -23,7 +23,7 @@ function LoginCallback() {
       }
 
       goToHome(history);
-    }, [])
+    }, [history, loggedContext])
 
   return null;
 }
