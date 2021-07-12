@@ -1,5 +1,5 @@
 /* index.scss */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
 $font-size-base: 1rem;
 $input-btn-font-size: $font-size-base;
@@ -8,18 +8,16 @@ $grid-gutter-width: 0;
 $tertiary: #a5a5a5;
 
 .btn {
-    @include media-breakpoint-up(sm) {
-      font-size: rfs-fluid-value(1.2rem);
-    }
-  }
-  
-.features-item {
-  padding: 2rem;
-  @include media-breakpoint-down(sm) {
-    padding: 0;
-    width: 100;
-  }
+    font-size: 1.2rem;
 }
+  
+// .features-item {
+//   padding: 2rem;
+//   @include media-breakpoint-down(sm) {
+//     padding: 0;
+//     width: 100;
+//   }
+// }
 
 .features {
   @include media-breakpoint-up(sm) {
@@ -31,7 +29,7 @@ $tertiary: #a5a5a5;
   width: 150px;
   margin-bottom: 1rem;
   
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     width: 100px;
     margin-bottom: 0;
   }
@@ -59,4 +57,9 @@ $tertiary: #a5a5a5;
 
 .result-item__btn {
   font-size: .8rem;
+}
+
+.loading-spinner {
+  width: 100px;
+  height: 100px;
 }
