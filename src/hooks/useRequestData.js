@@ -6,16 +6,24 @@ export function useRequestData(url, initialState) {
 
   useEffect(() => {
     const token = localStorage.getItem("token")
-    
+
     axios.get(url, {
       headers: {
-          Authorization: token
+        Authorization: token
       }
     }).then((response) => {
-        setData(response.data);
+      setData(response.data);
     }).catch((error) => {
-        console.log(error.message);
+      console.log(error.message);
     });
+    
+    const handleData = () => {
+      setData(null);
+    }
+
+    return function cleanup() {
+      handleData();
+    };
   }, [url]);
 
   return data;
