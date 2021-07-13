@@ -10,14 +10,14 @@ export const goToSearch = (history, username) => {
     history.push(`/search?username=${username}`)
 }
   
-export const goToSearchDetails = (history, username) => {
+export const goToUserDetails = (history, username) => {
     history.push(`/users/${username}`)
 }
   
-export const goToSearchItemRepositories = (history, username) => {
+export const goToUserRepos = (history, username) => {
     history.push(`/users/${username}/repos`)
 }
   
-export const goToSearchItemStarred = (history, username) => {
+export const goToUserStarred = (history, username) => {
     history.push(`/users/${username}/starred`)
 }
