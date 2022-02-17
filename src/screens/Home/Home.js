@@ -1,5 +1,6 @@
 import React from "react";
 import FeatItem from "../../components/FeatItem/FeatItem";
+import { BASE_URL } from "../../constants/apiConstants";
 
 function Home() {
   return (
@@ -51,7 +52,7 @@ function Home() {
 
       <div className="mx-auto text-center">
         <p className="fw-light fs-5 text">Comece agora</p>
-          <a className="btn btn-primary" href="http://localhost:3003/user/login/auth">
+          <a className="btn btn-primary" href={`${BASE_URL}/user/login/auth`}>
             Login pelo Github
           </a>
       </div>

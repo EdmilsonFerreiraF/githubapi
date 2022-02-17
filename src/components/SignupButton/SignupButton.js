@@ -7,7 +7,7 @@ const SignupButton = (props) => {
     
     return (
         <div onClick={props.signupClick} className="btn-group col-1-auto col-md-2 col-xl-1" role="group" aria-label="Basic example">
-            <a className="btn btn-success me-2" href="http://localhost:3003/user/login/auth">
+            <a className="btn btn-success me-2" href={`${BASE_URL}/user/login/auth`}>
                 {loggedContext && loggedContext.logged ? "Sair" : "Login"}
             </a>
         </div>

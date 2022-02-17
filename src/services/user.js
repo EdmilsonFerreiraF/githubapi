@@ -1,8 +1,9 @@
 import axios from "axios"
+import { BASE_URL } from "../constants/apiConstants";
 import { goToHome } from "../routes/coordinator";
 
 export const login = (body, history, setLogged) => {
-    axios.get(`http://localhost:3003/user/login/callback?code=${body}`
+    axios.get(`${BASE_URL}/user/login/callback?code=${body}`
     ).then(response => {
         localStorage.setItem("token", response.data.token)
         setLogged(true)
